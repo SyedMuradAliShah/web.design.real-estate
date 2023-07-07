@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$primary-color:#7166F0;
+$secondary-color:#080023;
+body{
+    font-family: 'Comfortaa', cursive !important;
+}
+a{
+    text-decoration: none !important;
+}
+@mixin primary-button{
+    background-color: $primary-color;
+    padding: 12px 15px;
+    margin: 0px 0px 0px 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:hover{
+        &::before{
+            width: 800px;
+            height: 800px;
+            display: inline-block;
+        }
+    }
+    &::before{
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        top: 0;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 1s ease;
+        z-index: 1;
+        content: "";
+        z-index: -1;
+    }
+}
+.main-btn{
+    @include primary-button;
+}
+.margin{
+    margin-top: 80px;
+}
+.heading{
+    a{
+        @include primary-button;
+    }
+}
+header{
+    width: 95%;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px #0800230d;
+    border-radius: 10px;
+    border: 1px solid $primary-color;
+    padding: 6px 0px;
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 45px;
+            }
+        }
+        .nav-item{
+            .nav-link{
+                color: $secondary-color;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.hero-section{
+    .searchbar{
+        width: 70%;
+        position: absolute;
+        left: 5%;
+        top: 40%;
+        transform: translate(0%, -50%);
+        .search-sec{
+            .tab-content{
+                background-color: #ffffff;
+                padding: 20px;
+                box-shadow: 0px 0px 10px #8080802e;
+                border-radius: 10px;
+                .srch-form{
+                    .form-group{
+                        label{
+                            margin-bottom: 10px;
+                        }
+                        button{
+                            width: 100%;
+                            margin: 0;
+                        }
+                        select{
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+            .nav-pills{
+                .nav-item{
+                    .nav-link{
+                        background-color: #ffffff;
+                        box-shadow: 0px 0px 10px #80808026;
+                        margin-right: 10px;
+                        padding: 10px 25px;
+                    }
+                    .active{
+                        background-color: $primary-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ======================================cities
+.cities{
+    .gallery{
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        height: 306px;
+        a{
+            color: #ffffff;
+        }
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to bottom, transparent, $secondary-color);
+            transition: 0.3s all;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            transition: 0.3s all;
+        }
+        .discription{
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            p{
+                margin-bottom: 5px;
+                font-size: 13px;
+            }
+        }
+    }
+    .city-single-listing{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .gallery{
+            height: 143px;
+        }
+    }
+}
+// ======================================cities
+// ======================================about
+.home-about{
+    .about-img{
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .heading{
+        p{
+            background-color: $primary-color;
+            padding: 1px 10px;
+            width: fit-content;
+            border-radius: 10px;
+            line-height: 2;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 800;
+        }
+    }
+    .h-about-items{
+        .h-about-boxes{
+            display: flex;
+            align-items: center;
+            border: 2px solid #7166f014;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            .icon{
+                width: 17%;
+                margin-right: 20px;
+                img{
+                    width: 100%;
+                }
+            }
+            .lower-text{
+                h4{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 0;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+// ======================================about
+// ======================================property-listing
+.property-listing{
+    .listing{
+        transition: 0.3s all;
+        border-radius: 10px;
+        padding: 10px;
+        .property-img{
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            img{
+                transition: 0.3s all;
+            }
+            .fvrt{
+                position: absolute;
+                z-index: 10;
+                color: #ffffff;
+                background-color: #7166f02d;
+                right: 10px;
+                top: 10px;
+                padding: 7px;
+                font-size: 14px;
+                border-radius: 20px;
+                line-height: 0;
+                border: 1px solid $primary-color;
+                &:hover{
+                    background-color: $primary-color;
+
+                }
+            }
+            .tag{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                z-index: 10;
+                color: #ffffff;
+                padding: 0px 10px;
+                font-size: 14px;
+                line-height: 2;
+                border-radius: 5px;
+                background-color: $primary-color;
+            }
+        }
+        &:hover{
+            box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.171);
+           
+            .property-img{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .lower-text{
+            .address{
+                font-size: 14px;
+                    font-weight: 700;
+            }
+            .detail{
+                p{
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+}
+// ======================================property-listing
+// ======================================proprty-type
+.proprty-type{
+    background-color: $secondary-color;
+    padding: 80px 0px;
+    .proprty-item{
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #ffffff38;
+        &:hover{
+            background-color: #ffffff;
+            .icon{
+                color: $primary-color;
+                background-color: #7166f01e;
+            }
+            .lower-text{
+                color: $secondary-color !important;
+            }
+        }
+        .icon{
+            font-size: 25px;
+            color: white;
+            background-color: #ffffff40;
+            width: 78px;
+            padding: 20px 0px;
+            border-radius: 53px;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+        .lower-text{
+            h5{
+                font-size: 1.1rem;
+            }
+            p{
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+    }
+}
+// ======================================proprty-type

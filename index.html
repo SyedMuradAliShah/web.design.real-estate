@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate flare</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/scss/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-fluid px-3">
+          <a class="navbar-brand m-0 p-0" href="#">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Sale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Rent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Agents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex right-side">
+                <a href="" class="main-btn"><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a>
+                <a href="" class="main-btn"><i class="fa-solid fa-house-chimney me-2"></i> Add Listing</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+<!-- =====================hero-section===================== -->
+<section class="hero-section position-relative">
+    <img src="assets/images/landing-bg.png" width="100%" alt="">
+    <div class="searchbar">
+        <div class="container">
+            <div class="search-sec">
+                <h1 class="fw-bold mb-4">Find Your Dream Place</h1>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-Sale-tab" data-bs-toggle="pill" data-bs-target="#pills-Sale" type="button" role="tab" aria-controls="pills-Sale" aria-selected="true">Sale</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-Rent-tab" data-bs-toggle="pill" data-bs-target="#pills-Rent" type="button" role="tab" aria-controls="pills-Rent" aria-selected="false">Rent</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-Sale" role="tabpanel" aria-labelledby="pills-Sale-tab" tabindex="0">
+                        <div class="srch-form">
+                            <form action="">
+                                <div class="row align-items-end">
+                                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="">Select City</label>
+                                            <select name="city" id="" class="form-select">
+                                                <option value="Select">Select</option>
+                                                <option value="Rawalpindi">Rawalpindi</option>
+                                                <option value="Islamabad">Islamabad</option>
+                                                <option value="Lahore">Lahore</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="">Property Status</label>
+                                            <select name="city" id="" class="form-select">
+                                                <option value="Select">Select</option>
+                                                <option value="Rawalpindi">Rawalpindi</option>
+                                                <option value="Islamabad">Islamabad</option>
+                                                <option value="Lahore">Lahore</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="">Property Type</label>
+                                            <select name="city" id="" class="form-select">
+                                                <option value="Select">Select</option>
+                                                <option value="Rawalpindi">Rawalpindi</option>
+                                                <option value="Islamabad">Islamabad</option>
+                                                <option value="Lahore">Lahore</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <button class="main-btn"><i class="fa-solid fa-magnifying-glass me-2"></i> Find Now</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Rent" role="tabpanel" aria-labelledby="pills-Rent-tab" tabindex="0">
+                      <div class="srch-form">
+                        <form action="">
+                            <div class="row align-items-end">
+                                <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="">Select City</label>
+                                        <select name="city" id="" class="form-select">
+                                            <option value="Select">Select</option>
+                                            <option value="Rawalpindi">Rawalpindi</option>
+                                            <option value="Islamabad">Islamabad</option>
+                                            <option value="Lahore">Lahore</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="">Property Status</label>
+                                        <select name="city" id="" class="form-select">
+                                            <option value="Select">Select</option>
+                                            <option value="Rawalpindi">Rawalpindi</option>
+                                            <option value="Islamabad">Islamabad</option>
+                                            <option value="Lahore">Lahore</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="">Property Type</label>
+                                        <select name="city" id="" class="form-select">
+                                            <option value="Select">Select</option>
+                                            <option value="Rawalpindi">Rawalpindi</option>
+                                            <option value="Islamabad">Islamabad</option>
+                                            <option value="Lahore">Lahore</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <button class="main-btn"><i class="fa-solid fa-magnifying-glass me-2"></i> Find Now</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =====================hero-section===================== -->
+<section class="heading text-center margin mb-4">
+  <div class="container">
+    <div class="row">
+      <h2 class="fw-bold">Properties by Cities</h2>
+      <p class="fs-6">Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+  </div>
+</section>
+<section class="cities">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div class="gallery">
+          <a href="listing.html">
+          <img src="assets/images/rawalpindi.jpg" width="600" height="400" alt="">
+          <div class="discription">
+            <p class="fw-bold">40+ Listing</p>
+            <h5 class="fw-bold">Rawalpindi</h5>
+            </div>
+          </a>
+          </div>
+      </div>
+      <div class="col-12 col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div class="city-single-listing">
+          <div class="gallery">
+            <a href="listing.html">
+            <img src="assets/images/islamabad.jpg" width="600" height="400" alt="">
+            <div class="discription">
+              <p class="fw-bold">40+ Listing</p>
+              <h5 class="fw-bold">Islamabad</h5>
+              </div>
+            </a>
+            </div>
+            <div class="gallery">
+              <a href="listing.html">
+              <img src="assets/images/faisalabad.jpg" width="600" height="400" alt="">
+              <div class="discription">
+                <p class="fw-bold">40+ Listing</p>
+                <h5 class="fw-bold">Faisalabad</h5>
+                </div>
+              </a>
+              </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div class="gallery">
+          <a href="listing.html">
+          <img src="assets/images/lahore.jpg" width="600" height="400" alt="">
+          <div class="discription">
+            <p class="fw-bold">40+ Listing</p>
+            <h5 class="fw-bold">Lahore</h5>
+            </div>
+          </a>
+          </div>
+      </div>
+      <div class="col-12 col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div class="city-single-listing">
+          <div class="gallery">
+            <a href="listing.html">
+            <img src="assets/images/karachi.jpg" width="600" height="400" alt="">
+            <div class="discription">
+              <p class="fw-bold">40+ Listing</p>
+              <h5 class="fw-bold">Karachi</h5>
+              </div>
+            </a>
+            </div>
+            <div class="gallery">
+              <a href="listing.html">
+              <img src="assets/images/multan.jpg" width="600" height="400" alt="">
+              <div class="discription">
+                <p class="fw-bold">40+ Listing</p>
+                <h5 class="fw-bold">Multan</h5>
+                </div>
+              </a>
+              </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div class="gallery">
+          <a href="listing.html">
+          <img src="assets/images/peshawer.jpg" width="600" height="400" alt="">
+          <div class="discription">
+            <p class="fw-bold">40+ Listing</p>
+            <h5 class="fw-bold">Peshawer</h5>
+            </div>
+          </a>
+          </div>
+      </div>
+      <div class="col-12 col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div class="gallery">
+          <a href="listing.html">
+          <img src="assets/images/gujranwala.jpg" width="600" height="400" alt="">
+          <div class="discription">
+            <p class="fw-bold">40+ Listing</p>
+            <h5 class="fw-bold">Gujranwala</h5>
+            </div>
+          </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================About====================== -->
+<section class="home-about margin">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-xl-5 col-lg-5 col-md-6 col-sm-12">
+        <div class="about-img">
+          <img src="assets/images/about.png" class="w-100" alt="">
+        </div>
+      </div>
+      <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 offset-xl-1 offset-lg-1">
+        <div class="heading">
+          <p>Why Choose Us</p>
+          <h2 class="fw-bold">The Leading Real Estate Rental Marketplace</h2>
+        </div>
+        <div class="mt-4 h-about-items">
+            <div class="h-about-boxes">
+              <div class="icon">
+                <img src="assets/images/wide-range-01.png" alt="">
+              </div>
+              <div class="lower-text">
+                <h4>Wide Range Of Properties</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laboriosam reprehenderit esse, natus, eius hic, autem
+              </p>
+              </div>
+            </div>
+            <div class="h-about-boxes">
+              <div class="icon">
+                <img src="assets/images/trusted-01.png" alt="">
+              </div>
+              <div class="lower-text">
+                <h4>Trusted by thousands</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laboriosam reprehenderit esse, natus, eius hic, autem
+              </p>
+              </div>
+            </div>
+            <div class="h-about-boxes">
+              <div class="icon">
+                <img src="assets/images/finance-01.png" alt="">
+              </div>
+              <div class="lower-text">
+                <h4>Financing made easy</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laboriosam reprehenderit esse, natus, eius hic, autem
+              </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================About====================== -->
+<!-- ======================featured-property====================== -->
+<section class="heading margin mb-4">
+  <div class="container">
+    <div class="row">
+      <div class="d-flex justify-content-between align-items-end">
+        <div>
+          <h2 class="fw-bold">Featured Properties</h2>
+          <p class="fs-6 m-0">Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+      <div>
+        <a href="listing.html" class="float-end">View All <i class="fa-solid fa-arrow-up-long"></i></a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="property-listing">
+  <div class="container">
+    <div class="row row-cols-4">
+      <div class="col">
+        <div class="listing">
+          <div class="property-img">
+            <p class="tag">Rent</p>
+            <a href="" class="fvrt">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            <img src="assets/images/p-1.jpg" class="w-100" alt="property-img">
+          </div>
+          <div class="lower-text mt-3">
+            <a href="" class="text-dark">
+              <p class="fw-bold">Rs-14,000</p>
+              <h6 class="fw-bold">Equestrian Family Home</h6>
+              <p class="text-black-50 address">Bahria Town Rawalpindi</p>
+              <div class="d-flex justify-content-between text-black-50 fs-6 fw-light detail">
+                <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="listing">
+          <div class="property-img">
+            <p class="tag">Sale</p>
+            <a href="" class="fvrt">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            <img src="assets/images/p-2.jpg" class="w-100" alt="property-img">
+          
+          </div>
+          <div class="lower-text mt-3">
+            <a href="" class="text-dark">
+              <p class="fw-bold">Rs-14,000</p>
+              <h6 class="fw-bold">Equestrian Family Home</h6>
+              <p class="address text-black-50">Bahria Town Rawalpindi</p>
+              <div class="d-flex justify-content-between text-black-50 fs-6 fw-light detail">
+                <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="listing">
+          <div class="property-img">
+            <p class="tag">Rent</p>
+            <a href="" class="fvrt">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            <img src="assets/images/p-3.jpg" class="w-100" alt="property-img">
+          
+          </div>
+          <div class="lower-text mt-3">
+            <a href="" class="text-dark">
+              <p class="fw-bold">Rs-14,000</p>
+              <h6 class="fw-bold">Equestrian Family Home</h6>
+              <p class="address text-black-50">Bahria Town Rawalpindi</p>
+              <div class="d-flex justify-content-between text-black-50 fs-6 fw-light detail">
+                <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="listing">
+          <div class="property-img">
+            <p class="tag">Rent</p>
+            <a href="" class="fvrt">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            <img src="assets/images/p-4.jpg" class="w-100" alt="property-img">
+          
+          </div>
+          <div class="lower-text mt-3">
+            <a href="" class="text-dark">
+              <p class="fw-bold">Rs-14,000</p>
+              <h6 class="fw-bold">Equestrian Family Home</h6>
+              <p class="address text-black-50">Bahria Town Rawalpindi</p>
+              <div class="d-flex justify-content-between text-black-50 fs-6 fw-light detail">
+                <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================featured-property====================== -->
+<!-- ======================property-type====================== -->
+<section class="proprty-type margin">
+  <div class="container">
+    <div class="row">
+      <div class="heading text-center mb-5">
+        <h2 class="fw-bold text-white">Explore Apartment Types</h2>
+          <p class="fs-6 m-0 text-white">Aliquam lacinia diam quis lacus euismod</p>
+      </div>
+    </div>
+    <div class="row row-cols-5">
+      <div class="col">
+        <a href="listing.html">
+          <div class="proprty-item">
+            <div class="icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="lower-text text-white">
+              <h5 class="fw-bold">Houses</h5>
+              <p class="fw-bold">22 Properties</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="listing.html">
+          <div class="proprty-item">
+            <div class="icon">
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <div class="lower-text text-white">
+              <h5 class="fw-bold">Apartments</h5>
+              <p class="fw-bold">22 Properties</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="listing.html">
+          <div class="proprty-item">
+            <div class="icon">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <div class="lower-text text-white">
+              <h5 class="fw-bold">Offices</h5>
+              <p class="fw-bold">22 Properties</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="listing.html">
+          <div class="proprty-item">
+            <div class="icon">
+              <i class="fa-solid fa-vihara"></i>
+            </div>
+            <div class="lower-text text-white">
+              <h5 class="fw-bold">Villas</h5>
+              <p class="fw-bold">22 Properties</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="listing.html">
+          <div class="proprty-item">
+            <div class="icon">
+              <i class="fa-solid fa-warehouse"></i>
+            </div>
+            <div class="lower-text text-white">
+              <h5 class="fw-bold">Warehouse</h5>
+              <p class="fw-bold">22 Properties</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================property-type====================== -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
