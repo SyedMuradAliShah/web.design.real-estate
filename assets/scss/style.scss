@@ -26,6 +26,7 @@ a{
     overflow: hidden;
     z-index: 1;
     &:hover{
+        color: #ffffff;
         &::before{
             width: 800px;
             height: 800px;
@@ -46,8 +47,45 @@ a{
         z-index: -1;
     }
 }
+@mixin secondary-button{
+    background-color: $secondary-color;
+    padding: 12px 15px;
+    margin: 0px 0px 0px 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:hover{
+        color: #ffffff;
+        &::before{
+            width: 800px;
+            height: 800px;
+            display: inline-block;
+        }
+    }
+    &::before{
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        top: 0;
+        background-color: $primary-color;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 1s ease;
+        z-index: 1;
+        content: "";
+        z-index: -1;
+    }
+}
 .main-btn{
     @include primary-button;
+}
+.secondary-btn{
+    @include secondary-button;
 }
 .margin{
     margin-top: 80px;
@@ -331,3 +369,178 @@ header{
     }
 }
 // ======================================proprty-type
+// ======================================agents
+.hm-agents{
+    a{
+        color: black;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    
+    .hm-agents-box{
+        &:hover{
+            .hm-agent-img{
+                img{
+                    transform: scale(1.2);
+                }
+                .hm-agent-media{
+                    left: 2%;
+                    opacity: 1;
+                }
+            }
+        }
+        .hm-agent-img{
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            img{
+                transition: 0.4s all;
+            }
+           .hm-agent-media{
+                position: absolute;
+                top: 50%;
+                left: -15%;
+                transform: translate(0%, -50%);
+                opacity: 0;
+                transition: 0.4s all;
+            a{
+                background-color: $primary-color;
+                padding: 5px 7px 3px 7px;
+                display: block;
+                margin: 5px 0px;
+                text-align: center;
+                border-radius: 10px;
+                transition: 0.4s all;
+                color: #ffffff;
+                font-size: 0.8rem;
+                &:hover{
+                    background-color: $secondary-color;
+                }
+            }
+           }
+        }
+        .lower-text{
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+// ======================================agents
+// ======================================explore
+.hm-explore{
+    position: relative;
+    &::after{
+        position: absolute;
+        background-color: $secondary-color;
+        content: '';
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .explore-box{
+        border-radius: 10px;
+        background-color: $primary-color;
+    }
+}
+// ======================================explore
+// ======================================footer
+.footer-style{
+    background-color: $secondary-color;
+    .footer-widget{
+        position: relative;
+        .footer-logo{
+            img{
+                width: 80px;
+            }
+        }
+        .contact-info{
+            .info-title {
+                color: #BEBDBD;
+                margin-bottom: 5px;
+                font-weight: bold;
+                font-size: 0.8rem;
+            }
+             a{
+                color: #ffffff;
+                font-weight: bold;
+            }
+        }
+        .app-info {
+           background-color: #7166f036;
+            border-radius: 12px;
+            padding: 10px 20px 2px;
+            width: 210px;
+            transition: all 0.4s ease;
+            .app-text{
+                font-size: 0.8rem;
+                margin-bottom: 5px;
+            }
+        }
+        .social-widget{
+            .social-style1{
+                i {
+                    color: #BEBDBD;
+                    border-radius: 50%;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 40px;
+                    transition: all 0.4s ease;
+                    &:hover {
+                        background-color: #7166f036;
+                        color: #ffffff;
+                    }
+                }
+            } 
+        }
+        .mailchimp-style1 {
+            position: relative;
+            .form-control {
+                background-color: #7166f036;
+                border: none;
+                border-radius: 12px;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                height: 70px;
+                padding-left: 30px;
+            }
+            button {
+                background-color: transparent;
+                border: none;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 600;
+                position: absolute;
+                right: 0%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .link-style{
+            ul{
+                list-style: none;
+                a {
+                    color: #BEBDBD;
+                    display: block;
+                    line-height: 40px;
+                    position: relative;
+                    transition: all 0.3s ease;
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                    &:hover {
+                        color: #ffffff;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+        }
+    } 
+}
+// ======================================footer

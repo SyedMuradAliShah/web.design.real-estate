@@ -1,0 +1,32 @@
+@media (min-width: 320px) and (max-width: 575px){
+    .hero-section{
+        .searchbar{
+            position: relative;
+            width: 100%;
+            transform: translate(0%, -27%);
+            left: 0;
+            top: 0;
+
+        }
+    }
+    .cities{
+        .gallery{
+            height: 200px !important;
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 991px){
+    .hero-section{
+        .searchbar{
+            width: 100%;
+            transform: translate(0%, -27%);
+            left: 0;
+
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1440px){
+    // .cities .gallery img{
+    //     height: 100% !important;
+    // }
+}
