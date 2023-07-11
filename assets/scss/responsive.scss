@@ -3,7 +3,7 @@
         .searchbar{
             position: relative;
             width: 100%;
-            transform: translate(0%, -27%);
+            transform: translate(0%, -10%);
             left: 0;
             top: 0;
 
@@ -14,19 +14,90 @@
             height: 200px !important;
         }
     }
+    .property-list{
+        .wrapper{
+            display: block;
+                .col{
+                    .listing-box{
+                        display: block !important;
+                        .listing-image {
+                            max-width: 100% !important;
+                        }
+                        .listing-content{
+                            .p-price{
+                                margin-top: 15px;
+                            }
+                            h4{
+                                width: auto;
+                            }
+                            p{
+                                width: auto !important;
+                            }
+                        }
+                    }
+                } 
+    } 
+    .left-side-search .widget-wrapper input.amount, .property-list .left-side-search .widget-wrapper input.amount2{
+        width: 40%;
+    }
+    }
 }
 @media (min-width: 576px) and (max-width: 991px){
     .hero-section{
         .searchbar{
             width: 100%;
-            transform: translate(0%, -27%);
+            transform: translate(0%, -14%);
             left: 0;
 
         }
     }
+    .property-list{
+        .wrapper{
+            display: block;
+                .col{
+                    .listing-box{
+                        display: block !important;
+                        .listing-image {
+                            max-width: 100% !important;
+                        }
+                        .listing-content{
+                            h4{
+                                width: auto;
+                            }
+                            p{
+                                width: auto !important;
+                            }
+                        }
+                    }
+                } 
+    } 
+    .left-side-search .widget-wrapper input.amount, .property-list .left-side-search .widget-wrapper input.amount2{
+        width: 42%;
+    }
+    }
+
 }
 @media (min-width: 992px) and (max-width: 1440px){
-    // .cities .gallery img{
-    //     height: 100% !important;
-    // }
+    .hero-section .searchbar{
+        width: 100%;
+        left: 0;
+        transform: translate(0%, -30%);
+
+    }
+    .property-list{
+        .wrapper{
+            .listing-content{
+                h4{
+                    width: 260px !important;
+                    font-size: 1rem !important;
+                }
+                .location{
+                    width: 260px !important;
+                }
+            }
+    } 
+    .left-side-search .widget-wrapper input.amount, .property-list .left-side-search .widget-wrapper input.amount2{
+        width: 40%;
+    }
+    }
 }

@@ -2,18 +2,74 @@
   .hero-section .searchbar {
     position: relative;
     width: 100%;
-    transform: translate(0%, -27%);
+    transform: translate(0%, -10%);
     left: 0;
     top: 0;
   }
   .cities .gallery {
     height: 200px !important;
   }
+  .property-list .wrapper {
+    display: block;
+  }
+  .property-list .wrapper .col .listing-box {
+    display: block !important;
+  }
+  .property-list .wrapper .col .listing-box .listing-image {
+    max-width: 100% !important;
+  }
+  .property-list .wrapper .col .listing-box .listing-content .p-price {
+    margin-top: 15px;
+  }
+  .property-list .wrapper .col .listing-box .listing-content h4 {
+    width: auto;
+  }
+  .property-list .wrapper .col .listing-box .listing-content p {
+    width: auto !important;
+  }
+  .property-list .left-side-search .widget-wrapper input.amount, .property-list .property-list .left-side-search .widget-wrapper input.amount2 {
+    width: 40%;
+  }
 }
 @media (min-width: 576px) and (max-width: 991px) {
   .hero-section .searchbar {
     width: 100%;
-    transform: translate(0%, -27%);
+    transform: translate(0%, -14%);
     left: 0;
+  }
+  .property-list .wrapper {
+    display: block;
+  }
+  .property-list .wrapper .col .listing-box {
+    display: block !important;
+  }
+  .property-list .wrapper .col .listing-box .listing-image {
+    max-width: 100% !important;
+  }
+  .property-list .wrapper .col .listing-box .listing-content h4 {
+    width: auto;
+  }
+  .property-list .wrapper .col .listing-box .listing-content p {
+    width: auto !important;
+  }
+  .property-list .left-side-search .widget-wrapper input.amount, .property-list .property-list .left-side-search .widget-wrapper input.amount2 {
+    width: 42%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1440px) {
+  .hero-section .searchbar {
+    width: 100%;
+    left: 0;
+    transform: translate(0%, -30%);
+  }
+  .property-list .wrapper .listing-content h4 {
+    width: 260px !important;
+    font-size: 1rem !important;
+  }
+  .property-list .wrapper .listing-content .location {
+    width: 260px !important;
+  }
+  .property-list .left-side-search .widget-wrapper input.amount, .property-list .property-list .left-side-search .widget-wrapper input.amount2 {
+    width: 40%;
   }
 }/*# sourceMappingURL=responsive.css.map */

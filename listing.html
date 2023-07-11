@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate-listing</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/scss/responsive.css">
+    <link rel="stylesheet" href="assets/scss/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-fluid px-3">
+          <a class="navbar-brand m-0 p-0" href="#">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Sale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Rent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Agents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-block d-lg-flex right-side">
+                <a href="" class="main-btn d-block d-lg-inline mb-3 mb-lg-0"><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a>
+                <a href="" class="main-btn d-block d-lg-inline"><i class="fa-solid fa-house-chimney me-2"></i> Add Listing</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+    <!-- ======================title-banner====================== -->
+    <section class="title-banner">
+       <div class="container">
+            <div class="row">
+                <h1 class="text-center text-white fw-bold">Latest Properties</h1>
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center m-0">
+                      <li class="breadcrumb-item"><a href="#" class="text-white">Home</a></li>
+                      <li class="breadcrumb-item active text-white-50" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+            </div>
+       </div>
+    </section>
+    
+    <!-- ======================title-banner====================== -->
+    <!-- ======================property-listing====================== -->
+    <section class="property-list">
+        <div class="container">
+          <div class="property-view-result d-none d-lg-flex justify-content-between align-items-center p-3 mt-5 mb-4">
+            <div class="hoemc-showing-results">
+                <p class="hoemc-showing-results__text m-0 text-black-50">Showing <span class="fw-bold text-black">1-5</span> of <span class="fw-bold text-black">17</span> results</p>
+            </div>
+            <div>
+              <div class="buttons">
+                <div class="list"><i class="fa fa-list"></i></div>
+                <div class="grid"><i class="fa fa-th-large"></i></div>
+              </div>
+            </div>
+        </div>
+            <div class="row mt-5 mt-lg-0">
+                <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <div class="left-side-search p-4">
+                    <div class="widget-wrapper">
+                      <h6 class="list-title fw-bold mb-3">Find your home</h6>
+                      <div class="search_area">
+                        <input type="text" class="form-control" placeholder="What are you looking for?">
+                        <label><i class="fa-solid fa-magnifying-glass"></i></label>
+                      </div>
+                    </div>
+                    <div class="widget-wrapper">
+                      <h6 class="list-title fw-bold mt-4 mb-3">Listing Status</h6>
+                      <div class="list-status">
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Buy">
+                          <label class="form-check-label" for="Buy">
+                            Buy
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Sale">
+                          <label class="form-check-label" for="Sale">
+                            Sale
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Rent">
+                          <label class="form-check-label" for="Rent">
+                            Rent
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-wrapper">
+                      <h6 class="list-title fw-bold mt-4 mb-3">Property Type</h6>
+                      <div class="list-type">
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="Houses">
+                          <label class="form-check-label" for="Houses">
+                            Houses
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="Apartments">
+                          <label class="form-check-label" for="Apartments">
+                            Apartments
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="Offices">
+                          <label class="form-check-label" for="Offices">
+                            Offices
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="Villas">
+                          <label class="form-check-label" for="Villas">
+                            Villas
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="Warehouse">
+                          <label class="form-check-label" for="Warehouse">
+                            Warehouse
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-wrapper">
+                      <h6 class="list-title fw-bold mt-4 mb-3">Price Range</h6>
+                      <div class="text-center amount-inputs">
+                        <input type="text" class="amount" placeholder="$9999"><span class="fa-sharp fa-solid fa-minus mx-2 dark-color"></span>
+                        <input type="text" class="amount2" placeholder="$9999">
+                      </div>
+                    </div>
+                    <div class="widget-wrapper">
+                      <h6 class="list-title fw-bold mt-4 mb-3">Bedrooms</h6>
+                      <div class="d-flex bathroom">
+                        <div class="selection">
+                          <input id="any" name="beds" type="radio" checked="">
+                          <label for="any">Any</label>
+                        </div>
+                        <div class="selection">
+                          <input id="oneplus" name="beds" type="radio">
+                          <label for="oneplus">1+</label>
+                        </div>
+                        <div class="selection">
+                          <input id="twoplus" name="beds" type="radio">
+                          <label for="twoplus">2+</label>
+                        </div>
+                        <div class="selection">
+                          <input id="threeplus" name="beds" type="radio">
+                          <label for="threeplus">3+</label>
+                        </div>
+                        <div class="selection">
+                          <input id="fourplus" name="beds" type="radio">
+                          <label for="fourplus">4+</label>
+                        </div>
+                        <div class="selection">
+                          <input id="fiveplus" name="beds" type="radio">
+                          <label for="fiveplus">5+</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-wrapper">
+                      <h6 class="list-title fw-bold mt-4 mb-3">Bathrooms</h6>
+                      <div class="d-flex bathroom">
+                        <div class="selection">
+                          <input id="anybath" name="baths" type="radio" checked="">
+                          <label for="anybath">Any</label>
+                        </div>
+                        <div class="selection">
+                          <input id="bath1" name="baths" type="radio">
+                          <label for="bath1">1+</label>
+                        </div>
+                        <div class="selection">
+                          <input id="bath2" name="baths" type="radio">
+                          <label for="bath2">2+</label>
+                        </div>
+                        <div class="selection">
+                          <input id="bath3" name="baths" type="radio">
+                          <label for="bath3">3+</label>
+                        </div>
+                        <div class="selection">
+                          <input id="bath4" name="baths" type="radio">
+                          <label for="bath4">4+</label>
+                        </div>
+                        <div class="selection">
+                          <input id="bath5" name="baths" type="radio">
+                          <label for="bath5">5+</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-wrapper">
+                      <h6 class="list-title fw-bold mt-4 mb-3">Location</h6>
+                      <div class="location">
+                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option selected>All Cities</option>
+                        <option value="1">Islamabad</option>
+                        <option value="2">Rawalpindi</option>
+                        <option value="3">Faisalabad</option>
+                      </select>
+                    </div>
+                    </div>
+                    <div class="widget-wrapper">
+                      <h6 class="list-title fw-bold mt-4 mb-3">Square Feet</h6>
+                      <div class="text-center amount-inputs">
+                        <input type="text" class="amount" placeholder="Min"><span class="fa-sharp fa-solid fa-minus mx-2 dark-color"></span>
+                        <input type="text" class="amount2" placeholder="Max">
+                      </div>
+                    </div>
+                    <button class="main-btn m-0 mt-4 w-100" type="button"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-8 col-lg-8 col-md-6 col-sm-12">
+                    <div class="wrapper mt-5 mt-md-0" id="wrapper">
+                      <div class="col">
+                       <div class="listing-box">
+                        <div class="listing-image">
+                          <a href="" class="fvrt-icon">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <div class="agent p-2">
+                            <a href="agent.html" class="d-flex justify-content-between align-items-center agent-box gap-1">
+                              <div class="agent-img">
+                                <img src="assets/images/agent-3.jpg" alt="">
+                              </div>
+                              <div class="details">
+                                <h6 class="m-0 fw-bold">sulaiman khan</h6>
+                                <p class="m-0 fw-bold">Broker</p>
+                              </div>
+                            </a>
+                            
+                          </div>
+                          <div class="img">
+                            <img src="assets/images/p-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="listing-content">
+                          <a href="">
+                          <div class="p-price d-flex justify-content-between align-items-center">
+                            <h5 class="fw-bold m-0">$14000 <span class="text-black-50 fs-6">/month</span></h5>
+                            <p class="fw-bold m-0">For Sale</p>
+                          </div>
+                          <h4 class="fw-bold mt-3">House For Sale in Rawalpindi</h4>
+                          <p class="location text-black-50"><i class="fa-solid fa-location-dot"></i> shamsabad near cricket stadium</p>
+                          <div class="d-flex gap-5 border-top pt-3 mt-md-2 mt-xl-5 text-black-50 fs-6 fw-bold detail">
+                            <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                            <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                            <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+                          </div>
+                        </a>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="col">
+                       <div class="listing-box">
+                        <div class="listing-image">
+                          <a href="" class="fvrt-icon">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <div class="agent p-2">
+                            <a href="agent.html" class="d-flex justify-content-between align-items-center agent-box gap-1">
+                              <div class="agent-img">
+                                <img src="assets/images/agent-3.jpg" alt="">
+                              </div>
+                              <div class="details">
+                                <h6 class="m-0 fw-bold">sulaiman khan</h6>
+                                <p class="m-0 fw-bold">Broker</p>
+                              </div>
+                            </a>
+                            
+                          </div>
+                          <div class="img">
+                            <img src="assets/images/p-2.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="listing-content">
+                          <a href="">
+                          <div class="p-price d-flex justify-content-between align-items-center">
+                            <h5 class="fw-bold m-0">$14000 <span class="text-black-50 fs-6">/month</span></h5>
+                            <p class="fw-bold m-0">For Sale</p>
+                          </div>
+                          <h4 class="fw-bold mt-3">House For Sale in Rawalpindi</h4>
+                          <p class="location text-black-50"><i class="fa-solid fa-location-dot"></i> shamsabad near cricket stadium</p>
+                          <div class="d-flex gap-5 border-top pt-3 mt-md-2 mt-xl-5 text-black-50 fs-6 fw-bold detail">
+                            <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                            <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                            <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+                          </div>
+                        </a>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="col">
+                       <div class="listing-box">
+                        <div class="listing-image">
+                          <a href="" class="fvrt-icon">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <div class="agent p-2">
+                            <a href="agent.html" class="d-flex justify-content-between align-items-center agent-box gap-1">
+                              <div class="agent-img">
+                                <img src="assets/images/agent-3.jpg" alt="">
+                              </div>
+                              <div class="details">
+                                <h6 class="m-0 fw-bold">sulaiman khan</h6>
+                                <p class="m-0 fw-bold">Broker</p>
+                              </div>
+                            </a>
+                            
+                          </div>
+                          <div class="img">
+                            <img src="assets/images/p-3.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="listing-content">
+                          <a href="">
+                          <div class="p-price d-flex justify-content-between align-items-center">
+                            <h5 class="fw-bold m-0">$14000 <span class="text-black-50 fs-6">/month</span></h5>
+                            <p class="fw-bold m-0">For Sale</p>
+                          </div>
+                          <h4 class="fw-bold mt-3">House For Sale in Rawalpindi</h4>
+                          <p class="location text-black-50"><i class="fa-solid fa-location-dot"></i> shamsabad near cricket stadium</p>
+                          <div class="d-flex gap-5 border-top pt-3 mt-md-2 mt-xl-5 text-black-50 fs-6 fw-bold detail">
+                            <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                            <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                            <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+                          </div>
+                        </a>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="col">
+                       <div class="listing-box">
+                        <div class="listing-image">
+                          <a href="" class="fvrt-icon">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <div class="agent p-2">
+                            <a href="agent.html" class="d-flex justify-content-between align-items-center agent-box gap-1">
+                              <div class="agent-img">
+                                <img src="assets/images/agent-3.jpg" alt="">
+                              </div>
+                              <div class="details">
+                                <h6 class="m-0 fw-bold">sulaiman khan</h6>
+                                <p class="m-0 fw-bold">Broker</p>
+                              </div>
+                            </a>
+                            
+                          </div>
+                          <div class="img">
+                            <img src="assets/images/p-4.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="listing-content">
+                          <a href="">
+                          <div class="p-price d-flex justify-content-between align-items-center">
+                            <h5 class="fw-bold m-0">$14000 <span class="text-black-50 fs-6">/month</span></h5>
+                            <p class="fw-bold m-0">For Sale</p>
+                          </div>
+                          <h4 class="fw-bold mt-3">House For Sale in Rawalpindi</h4>
+                          <p class="location text-black-50"><i class="fa-solid fa-location-dot"></i> shamsabad near cricket stadium</p>
+                          <div class="d-flex gap-5 border-top pt-3 mt-md-2 mt-xl-5 text-black-50 fs-6 fw-bold detail">
+                            <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                            <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                            <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+                          </div>
+                        </a>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="listing-pagination">
+                      <nav data-pagination>
+                        <a href=# disabled><i class="fa-solid fa-angles-left"></i></a>
+                        <ul>
+                          <li class=current><a href=#1>1</a>
+                          <li><a href=#2>2</a>
+                          <li><a href=#3>3</a>
+                          <li><a href=#4>4</a>
+                          <li><a href=#5>5</a>
+                          <li><a href=#10>…</a>
+                          <li><a href=#41>41</a>
+                        </ul>
+                        <a href=#2><i class="fa-solid fa-angles-right"></i></a>
+                      </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================explore====================== -->
+<section class="hm-explore margin">
+    <div class="container">
+      <div class="row">
+        <div class="explore-box d-block d-md-flex justify-content-between align-items-center py-5 px-5">
+          <div>
+            <h2 class="text-white fw-bold">Looking for a dream home?</h2>
+            <p class="m-0 text-white fw-bold">We help you make the dream of new house a reality</p>
+          </div>
+          <div>
+            <a href="listing.html" class="secondary-btn float-end">Explore Properties <i class="fa-solid fa-arrow-up-long"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================explore====================== -->
+  <!-- ======================footer====================== -->
+  <section class="footer-style pt-5 pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="footer-widget mb-4 mb-lg-5">
+            <a class="footer-logo" href="index.html"><img class="mb-4" src="assets/images/white-logo.png" alt=""></a>
+            <div class="row mb-4 mb-lg-5">
+              <div class="col-auto">
+                <div class="contact-info">
+                  <p class="info-title">Total Free Customer Care</p>
+                  <h6 class="info-phone"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="contact-info">
+                  <p class="info-title">Nee Live Support?</p>
+                  <h6 class="info-mail"><a href="mailto:hi@Realestate.com">hi@Realestate.com</a></h6>
+                </div>
+              </div>
+            </div>
+            <div class="app-widget">
+              <h5 class="title text-white mb-4 fw-bold">Apps</h5>
+              <div class="row mb-4 mb-lg-5">
+                <div class="col-auto">
+                  <a href="">
+                    <div class="app-info d-flex align-items-center mb-3">
+                      <div class="flex-shrink-0">
+                        <i class="fab fa-apple fs-2 text-white"></i>
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <p class="app-text text-white-50 fw-bold">Download on the</p>
+                        <h6 class="app-title text-white fw-bold">Apple Store</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="">
+                    <div class="app-info d-flex align-items-center mb10">
+                      <div class="flex-shrink-0">
+                        <i class="fab fa-google-play fs-4 text-white"></i>
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <p class="app-text text-white-50 fw-bold">Get in on</p>
+                        <h6 class="app-title text-white fw-bold">Google Play</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="social-widget">
+              <h6 class="text-white mb-4 fw-bold">Follow us on social media</h6>
+              <div class="social-style1">
+                <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
+                <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
+                <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
+                <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="footer-widget mb-4 mb-lg-5">
+            <div class="mailchimp-widget mb-4 mb-lg-5">
+              <h6 class="title text-white fw-bold mb-4">Keep Yourself Up to Date</h6>
+              <div class="mailchimp-style1">
+                <input type="email" class="form-control" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+              </div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="link-style mb-3">
+                  <h6 class="text-white mb-4 fw-bold">Popular Search</h6>
+                  <ul class="ps-0">
+                    <li><a href="">Apartment for Rent</a></li>
+                    <li><a href="">House for Rent</a></li>
+                    <li><a href="">Offices for Buy</a></li>
+                    <li><a href="">Offices for Rent</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="link-style mb-3">
+                  <h6 class="text-white mb-4">Quick Links</h6>
+                  <ul class="ps-0">
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Contact Support</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">FAQs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="link-style mb-3">
+                  <h6 class="text-white mb-4">Discover</h6>
+                  <ul class="ps-0">
+                    <li><a href="">Rawalpindi</a></li>
+                    <li><a href="">Islamabad</a></li>
+                    <li><a href="">Lahore</a></li>
+                    <li><a href="">Karachi</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container border-top border-light py-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="text-center text-lg-start">
+            <p class="copyright-text text-white">© Realestate - All rights reserved</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="text-center text-lg-end">
+            <p class="footer-menu text-white"><a class="text-white" href="#">Privacy</a> · <a class="text-white" href="#">Terms</a> · <a class="text-white" href="#">Sitemap</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================footer====================== -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/javascript/jquery.js"></script>
+      <script src="assets/javascript/javascript.js"></script>
+      
+</body>
+</html>
