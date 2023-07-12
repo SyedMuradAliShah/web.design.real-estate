@@ -391,6 +391,7 @@
                        </div>
                       </div>
                     </div>
+
                     <div class="listing-pagination">
                       <nav data-pagination>
                         <a href=# disabled><i class="fa-solid fa-angles-left"></i></a>
@@ -555,9 +556,31 @@
     </div>
   </section>
   <!-- ======================footer====================== -->
+  <script>
+    
+var wrapper = document.getElementById("wrapper");
+wrapper.classList.add("list"); // Add list class by default
+
+document.addEventListener("click", function (event) {
+  if (!event.target.matches(".list")) return;
+
+  // List view
+  event.preventDefault();
+  wrapper.classList.add("list");
+});
+
+document.addEventListener("click", function (event) {
+  if (!event.target.matches(".grid")) return;
+
+  // Grid view
+  event.preventDefault();
+  wrapper.classList.remove("list");
+});
+  </script>
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/javascript/jquery.js"></script>
-      <script src="assets/javascript/javascript.js"></script>
+  <script src="assets/javascript/splide.min.js"></script>
+  <script src="assets/javascript/javascript.js"></script>
       
 </body>
 </html>

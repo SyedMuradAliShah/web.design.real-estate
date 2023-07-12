@@ -805,4 +805,126 @@ header .navbar .nav-item .nav-link {
   .property-list .listing-pagination [data-pagination] {
     font-size: 16pt;
   }
+}
+
+.property-details #sync1 {
+  height: 60vh;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.property-details #sync1 .item {
+  border-radius: 3px;
+  text-align: center;
+}
+.property-details #sync2 .item {
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.property-details #sync2 .owl-item {
+  width: 150px !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.property-details #sync2 .item {
+  opacity: 0.6;
+  width: 150px;
+}
+.property-details #sync2 .synced .item {
+  opacity: 1;
+}
+.property-details .all-details {
+  border: 1px solid rgba(113, 102, 240, 0.12);
+  border-radius: 10px;
+  background-color: rgba(143, 143, 143, 0.0196078431);
+}
+.property-details .all-details .overview-icon {
+  border-radius: 10px;
+}
+.property-details .all-details .map {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #7166F0;
+}
+.property-details .all-details .Amenities p i {
+  font-size: 11px;
+  transform: translate(0px, -3px);
+  color: #7166F0;
+}
+.property-details .about-agent {
+  border: 1px solid rgba(113, 102, 240, 0.12);
+  border-radius: 10px;
+  background-color: rgba(143, 143, 143, 0.0196078431);
+}
+.property-details .about-agent .agent-img {
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.property-details .about-agent .agent-img img {
+  width: 100%;
+}
+.property-details .about-agent .lower-text .product-rating {
+  list-style-type: none;
+}
+.property-details .about-agent .lower-text .product-rating li i {
+  color: #e59500;
+}
+.property-details .about-agent .lower-text .agent-media a {
+  color: #080023;
+  width: 35px;
+  line-height: 0;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(128, 128, 128, 0.0588235294);
+}
+.property-details .about-agent .lower-text .agent-media a:hover {
+  color: #7166F0;
+  background-color: rgba(113, 102, 240, 0.1843137255);
+}
+.property-details .about-agent form .form-floating .form-control:focus {
+  box-shadow: none;
+  border-color: #7166F0;
+}
+.property-details .about-agent form .form-floating label {
+  transition: 0.4s all;
+  font-size: 0.9rem;
+}
+.property-details .about-agent .top-properties a {
+  color: black;
+}
+.property-details .about-agent .top-properties a:hover .prprty-img img {
+  transform: scale(1.2);
+}
+.property-details .about-agent .top-properties .prprty-img {
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.property-details .about-agent .top-properties .prprty-img img {
+  transition: 0.4s all;
+}
+.property-details .about-agent .top-properties .side-text .product-rating {
+  list-style-type: none;
+}
+.property-details .about-agent .top-properties .side-text .product-rating li i {
+  font-size: 0.7rem;
+  color: #e59500;
+}
+.property-details .about-agent .top-properties .side-text p {
+  font-size: 0.9rem;
+}
+.property-details .about-agent .top-properties .side-text p span {
+  color: #7166F0;
+  font-size: 0.7rem;
+}
+.property-details .about-agent .category a {
+  color: gray;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.property-details .about-agent .category a:hover {
+  color: #7166F0;
 }/*# sourceMappingURL=style.css.map */
