@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Comfortaa", cursive !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 a {
@@ -697,6 +697,14 @@ header .navbar .nav-item .nav-link {
   width: 100%;
   margin-top: 20px;
 }
+.property-list .wrapper .col .listing-box .listing-content .product-rating {
+  list-style-type: none;
+  margin-bottom: 5px !important;
+}
+.property-list .wrapper .col .listing-box .listing-content .product-rating li i {
+  font-size: 0.9rem;
+  color: #e59500;
+}
 .property-list .wrapper .col .listing-box .listing-content .p-price h5 {
   color: #7166F0;
 }
@@ -711,14 +719,14 @@ header .navbar .nav-item .nav-link {
   font-size: 1.5rem;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 320px;
+  width: 495px;
   white-space: nowrap;
   color: #080023;
 }
 .property-list .wrapper .col .listing-box .listing-content .location {
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 320px;
+  width: 495px;
   white-space: nowrap;
   font-weight: bold;
   font-size: 0.9rem;
@@ -729,18 +737,19 @@ header .navbar .nav-item .nav-link {
 .property-list .wrapper .col .listing-box .listing-content .detail i {
   color: #7166F0;
 }
-.property-list .listing-pagination {
+
+.listing-pagination {
   /* Disabled & Hidden Styles */
 }
-.property-list .listing-pagination [data-pagination],
-.property-list .listing-pagination [data-pagination] *,
-.property-list .listing-pagination [data-pagination] *:before,
-.property-list .listing-pagination [data-pagination] *:after {
+.listing-pagination [data-pagination],
+.listing-pagination [data-pagination] *,
+.listing-pagination [data-pagination] *:before,
+.listing-pagination [data-pagination] *:after {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   font-kerning: auto;
 }
-.property-list .listing-pagination [data-pagination] {
+.listing-pagination [data-pagination] {
   font-size: 8pt;
   line-height: 1;
   font-weight: 700;
@@ -748,61 +757,62 @@ header .navbar .nav-item .nav-link {
   text-align: center;
   transition: font-size 0.2s ease-in-out;
 }
-.property-list .listing-pagination [data-pagination] ul {
+.listing-pagination [data-pagination] ul {
   list-style-type: none;
   display: inline;
   font-size: 100%;
   margin: 0;
   padding: 0.5em;
 }
-.property-list .listing-pagination [data-pagination] ul li {
+.listing-pagination [data-pagination] ul li {
   display: inline-block;
   font-size: 100%;
   width: auto;
   border-radius: 3px;
 }
-.property-list .listing-pagination [data-pagination] > a {
+.listing-pagination [data-pagination] > a {
   font-size: 140%;
 }
-.property-list .listing-pagination [data-pagination] a {
+.listing-pagination [data-pagination] a {
   color: #7166F0;
   font-size: 100%;
   padding: 0.5em;
+  font-weight: 500;
 }
-.property-list .listing-pagination [data-pagination] a:focus,
-.property-list .listing-pagination [data-pagination] a:hover {
+.listing-pagination [data-pagination] a:focus,
+.listing-pagination [data-pagination] a:hover {
   color: #080023;
 }
-.property-list .listing-pagination [data-pagination] li.current {
+.listing-pagination [data-pagination] li.current {
   background: #7166F0;
   padding: 9px 4px;
 }
-.property-list .listing-pagination [data-pagination] li.current a {
+.listing-pagination [data-pagination] li.current a {
   color: #ffffff !important;
 }
-.property-list .listing-pagination [data-pagination] .disabled,
-.property-list .listing-pagination [data-pagination] [hidden],
-.property-list .listing-pagination [data-pagination] [disabled] {
+.listing-pagination [data-pagination] .disabled,
+.listing-pagination [data-pagination] [hidden],
+.listing-pagination [data-pagination] [disabled] {
   opacity: 0.5;
   pointer-events: none;
 }
 @media (min-width: 350px) {
-  .property-list .listing-pagination [data-pagination] {
+  .listing-pagination [data-pagination] {
     font-size: 10pt;
   }
 }
 @media (min-width: 500px) {
-  .property-list .listing-pagination [data-pagination] {
+  .listing-pagination [data-pagination] {
     font-size: 12pt;
   }
 }
 @media (min-width: 700px) {
-  .property-list .listing-pagination [data-pagination] {
+  .listing-pagination [data-pagination] {
     font-size: 14pt;
   }
 }
 @media (min-width: 900px) {
-  .property-list .listing-pagination [data-pagination] {
+  .listing-pagination [data-pagination] {
     font-size: 16pt;
   }
 }
@@ -839,6 +849,17 @@ header .navbar .nav-item .nav-link {
   border-radius: 10px;
   background-color: rgba(143, 143, 143, 0.0196078431);
 }
+.property-details .all-details h4 {
+  font-weight: 600;
+}
+.property-details .all-details p {
+  font-weight: 500;
+}
+.property-details .all-details .details p {
+  border-bottom: 1px solid rgba(113, 102, 240, 0.11);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
 .property-details .all-details .overview-icon {
   border-radius: 10px;
 }
@@ -851,6 +872,40 @@ header .navbar .nav-item .nav-link {
   font-size: 11px;
   transform: translate(0px, -3px);
   color: #7166F0;
+}
+.property-details .reviews .product-rating {
+  list-style-type: none;
+}
+.property-details .reviews .product-rating li i {
+  font-size: 0.8rem;
+  color: #e59500;
+}
+.property-details .reviews .customer-img {
+  max-width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.property-details .reviews .customer-img img {
+  width: 100%;
+}
+.property-details .reviews .date {
+  border: 1px solid #7166F0;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+.property-details .reviews .text {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.property-details .reviews .add-review .form-floating label {
+  transition: 0.4s all;
+  font-size: 0.9rem;
+}
+.property-details .reviews .add-review .form-floating .form-control:focus {
+  box-shadow: none;
+  border-color: #7166F0;
 }
 .property-details .about-agent {
   border: 1px solid rgba(113, 102, 240, 0.12);
@@ -927,4 +982,112 @@ header .navbar .nav-item .nav-link {
 }
 .property-details .about-agent .category a:hover {
   color: #7166F0;
+}
+.property-details .side-bar {
+  top: 90px;
+}
+
+.agents-listing .agent-box {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.219);
+}
+.agents-listing .agent-box:hover .agent-img {
+  height: 100%;
+}
+.agents-listing .agent-box:hover .agent-img img {
+  transform: scale(1.2);
+}
+.agents-listing .agent-box .agent-img {
+  height: 100%;
+  overflow: hidden;
+}
+.agents-listing .agent-box .agent-img img {
+  transition: 0.4s all;
+}
+.agents-listing .agent-box .lower-text {
+  padding: 0px 10px;
+}
+.agents-listing .agent-box .lower-text a {
+  color: gray;
+}
+.agents-listing .agent-box .lower-text a:hover {
+  color: #7166F0;
+}
+.agents-listing .agent-box .lower-text p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 7px;
+}
+.agents-listing .agent-box .lower-text .agent-social a {
+  padding: 3px 6px;
+  background-color: #7166F0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 5px;
+}
+.agents-listing .agent-box .lower-text .agent-social a:hover {
+  background-color: #080023;
+}
+.agents-listing .agent-box .lower-text .bottom {
+  border-top: 1px solid rgba(128, 128, 128, 0.219);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.agents-listing .agent-box .lower-text .bottom img {
+  width: 30px;
+}
+.agents-listing .agent-box .lower-text .bottom a {
+  font-size: 0.8rem;
+  margin-top: 12px;
+  color: #7166F0;
+}
+
+.agent-detail .agent-info .agent-img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.agent-detail .agent-info .agent-side-info {
+  margin-top: 20px;
+}
+.agent-detail .agent-info .agent-side-info p {
+  font-weight: 500;
+}
+.agent-detail .agent-info .agent-side-info .agent-social a {
+  padding: 3px 6px;
+  background-color: #7166F0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 5px;
+}
+.agent-detail .agent-info .agent-side-info .agent-social a:hover {
+  background-color: #080023;
+}
+.agent-detail .agent-info .about-agent {
+  border-radius: 10px;
+  border: 1px solid rgba(113, 102, 240, 0.12);
+  background-color: #fdfdfd;
+  width: 90%;
+  margin: -70px auto 0 auto;
+  position: relative;
+  box-shadow: 0px 3px 5px rgba(207, 207, 207, 0.16);
+}
+.agent-detail .agent-info .about-agent p {
+  font-weight: 600;
+}
+.agent-detail .about-agent {
+  border: 1px solid rgba(113, 102, 240, 0.12);
+  border-radius: 10px;
+  background-color: rgba(143, 143, 143, 0.0196078431);
+}
+.agent-detail .about-agent form .form-floating label {
+  transition: 0.4s all;
+  font-size: 0.9rem;
+}
+.agent-detail .about-agent form .form-floating .form-control:focus {
+  box-shadow: none;
+  border-color: #7166F0;
 }/*# sourceMappingURL=style.css.map */
