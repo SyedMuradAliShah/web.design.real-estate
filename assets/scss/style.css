@@ -1090,4 +1090,206 @@ header .navbar .nav-item .nav-link {
 .agent-detail .about-agent form .form-floating .form-control:focus {
   box-shadow: none;
   border-color: #7166F0;
+}
+
+.contact-pg .contact-form {
+  position: relative;
+  height: 100%;
+}
+.contact-pg .contact-form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../images/contact-pattern.jpg) no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.contact-pg .contact-form .form-sec {
+  width: 60%;
+  margin: 0 auto;
+  padding: 23px;
+  border-radius: 10px;
+}
+.contact-pg .contact-form .form-sec .form-floating .form-control:focus {
+  box-shadow: none;
+  border-color: #7166F0;
+}
+.contact-pg .contact-form .form-sec .form-floating label {
+  transition: 0.4s all;
+  font-size: 0.9rem;
+}
+
+.contact-detail .contact-pg-details {
+  border-radius: 10px;
+  border: 1px solid #7166F0;
+  background-color: rgba(113, 102, 240, 0.1019607843);
+  padding: 25px;
+}
+.contact-detail .contact-pg-details .icon {
+  background-color: rgba(113, 102, 240, 0.1019607843);
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 15px;
+  color: #7166F0;
+  width: 75px;
+  text-align: center;
+}
+.contact-detail .contact-pg-details .contact-info p {
+  margin: 5px;
+  font-weight: 700;
+}
+.contact-detail .contact-pg-details .contact-info h5 {
+  font-weight: 500;
+}
+
+.contact-map {
+  border: 1px solid #7166F0;
+}
+
+.features {
+  background-color: gray;
+  padding: 100px 0px;
+  background-color: rgba(113, 102, 240, 0.1019607843);
+}
+.features .featur-box {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s all;
+  border: 1px solid rgba(113, 102, 240, 0.2352941176);
+}
+.features .featur-box:hover {
+  background-color: #7166F0;
+}
+.features .featur-box:hover h4 {
+  color: #ffffff;
+}
+.features .featur-box:hover p {
+  color: #ffffff !important;
+}
+.features .featur-box:hover .icon {
+  background-color: #ffffff;
+}
+.features .featur-box .icon {
+  width: 60%;
+  margin: 0 auto;
+  padding: 35px 45px;
+  background-color: #f9f9f9;
+  border-radius: 100%;
+  transition: 0.3s all;
+}
+
+.counter .counter-bg {
+  background: url(../images/about.jpg) no-repeat center;
+  padding: 150px 30px;
+  background-size: cover;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.counter .counter-bg::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #080023;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+.counter .counter-bg .counter-box {
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.201);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+}
+.counter .counter-bg .counter-box i {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  background-color: #7166F0;
+  padding: 23px 0px;
+  width: 80px;
+  border-radius: 100%;
+  border: 1px solid;
+}
+.counter .counter-bg .counter-box h5 {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.counter .counter-bg .counter-box p {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.login .login-form {
+  min-width: 320px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid rgba(113, 102, 240, 0.1019607843);
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(202, 202, 202, 0.231372549);
+  position: relative;
+}
+.login .login-form .back-home {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid #7166F0;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  border-radius: 7px;
+  color: black;
+  background: rgba(112, 102, 239, 0.1098039216);
+  font-weight: 600;
+}
+.login .login-form .back-home:hover {
+  background-color: #7166F0;
+  color: white;
+}
+.login .login-form .logo {
+  width: 70px;
+  margin: 20px auto;
+}
+.login .login-form .hr_content {
+  position: relative;
+}
+.login .login-form .hr_content .hr_top_text {
+  background-color: #ffffff;
+  font-size: 16px;
+  height: 35px;
+  left: 0;
+  letter-spacing: 0em;
+  line-height: 37px;
+  margin: 0 auto;
+  right: 0;
+  text-align: center;
+  top: -18px;
+  width: 40px;
+  position: absolute;
+}
+.login .login-form .social-btn {
+  margin-top: 50px;
+}
+.login .login-form .social-btn a {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin: 0px 5px;
+  color: black;
+}
+.login .login-form .social-btn a:nth-child(2) {
+  border: 1px solid #3A77EA;
+  background-color: #3A77EA;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
