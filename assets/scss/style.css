@@ -1231,15 +1231,37 @@ header .navbar .nav-item .nav-link {
   font-weight: 800;
 }
 
+.login {
+  position: relative;
+}
+.login .login-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}
+.login .login-img img {
+  width: 100%;
+}
 .login .login-form {
   min-width: 320px;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 5% 20%;
   text-align: center;
   border: 1px solid rgba(113, 102, 240, 0.1019607843);
   border-radius: 15px;
   box-shadow: 0px 6px 15px rgba(202, 202, 202, 0.231372549);
   position: relative;
+  background-color: #ffffff;
+}
+.login .login-form .form-floating .form-control:focus {
+  box-shadow: none;
+  border-color: #7166F0;
+}
+.login .login-form .form-floating label {
+  transition: 0.4s all;
+  font-size: 0.9rem;
 }
 .login .login-form .back-home {
   position: absolute;

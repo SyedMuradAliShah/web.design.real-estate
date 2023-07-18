@@ -1392,15 +1392,39 @@ header{
 // ==============================counter
 // ==============================login
 .login{
+    position: relative;
+    .login-img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        z-index: -1;
+        img{
+            width: 100%;
+        }
+    }
     .login-form{
         min-width: 320px;
         max-width: 500px;
-        margin: 0 auto;
+        margin: 5% 20%;
         text-align: center;
         border: 1px solid #7166f01a;
         border-radius: 15px;
         box-shadow: 0px 6px 15px #cacaca3b;
         position: relative;
+        background-color: #ffffff;
+        .form-floating{
+            .form-control{
+                &:focus{
+                    box-shadow: none;
+                    border-color: $primary-color;
+                }
+            }
+            label{
+                transition: 0.4s all;
+                font-size: 0.9rem;
+            }
+        }
         .back-home{
             position: absolute;
             top: 10px;
