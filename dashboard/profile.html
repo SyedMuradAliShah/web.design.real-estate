@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - profile</title>
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <link rel="stylesheet" href="assets/scss/responsive.css" />
+    <link rel="stylesheet" href="assets/scss/all.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-fluid px-3">
+          <a class="navbar-brand m-0 p-0" href="index.html">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="listing.html"
+                  >Sale</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="listing.html"
+                  >Rent</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="agents.html"
+                  >Agents</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="d-block d-lg-flex right-side">
+              <a
+                href="login.html"
+                class="main-btn d-block d-lg-inline mb-3 mb-lg-0"
+                ><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a
+              >
+              <a href="" class="main-btn d-block d-lg-inline"
+                ><i class="fa-solid fa-house-chimney me-2"></i> Add Listing</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ======================title-banner====================== -->
+    <section class="title-banner">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center text-white fw-bold">My Profile</h1>
+          <nav
+            style="
+              --bs-breadcrumb-divider: url(
+                &#34;data:image/svg + xml,
+                %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+              );
+            "
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb justify-content-center m-0">
+              <li class="breadcrumb-item">
+                <a href="index.html" class="text-white">Dashboard</a>
+              </li>
+              <li
+                class="breadcrumb-item active text-white-50"
+                aria-current="page"
+              >
+                My Profile
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- ======================title-banner====================== -->
+    <section class="dashbaord-wrapper margin">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-3 col-lg-4">
+                <div class="dash-nav">
+                  <nav class="navbar navbar-expand-lg flex-row flex-lg-column align-items-start">
+                    <p class="d-block d-lg-none m-0 ps-2">Dashboard Navbar</p>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dashnav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                      </button>
+                      <div class="collapse navbar-collapse w-100" id="dashnav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-block w-100">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-shapes"></i> Dashboard</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="myproperty.html"><i class="fa-solid fa-house"></i> My Properties</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                          </li>
+                        </ul>
+                      </div>
+                  </nav>
+                </div>
+              </div>
+          <div class="col-12 col-xl-9 col-lg-8">
+            <div class="dashboard-content">
+              <div
+                class="wrapper-heading d-block d-md-flex justify-content-between align-items-center"
+              >
+                <h3>My Profile</h3>
+                <div>
+                  <a
+                    href="add-property.html"
+                    class="float-end main-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#editprofile"
+                    ><i class="fa-solid fa-user-pen"></i> Edit Profile</a
+                  >
+                </div>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="editprofile"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-dark"
+                          id="staticBackdropLabel"
+                        >
+                          Personals Info edit
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="profile-img">
+                          <div class="avatar-upload">
+                            <div class="avatar-edit">
+                              <input
+                                type="file"
+                                id="imageUpload"
+                                accept=".png, .jpg, .jpeg"
+                              />
+                              <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                              <div
+                                id="imagePreview"
+                                style="
+                                  background-image: url(http://i.pravatar.cc/500?img=7);
+                                "
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="profile-form mt-4">
+                            <form action="">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="name" placeholder="Name">
+                                    <label for="name">Name</label>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="number" placeholder="number">
+                                    <label for="number">Phone Number</label>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="Officenumber" placeholder="Officenumber">
+                                    <label for="Officenumber">Office Number</label>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="email">
+                                    <label for="email">Email</label>
+                                  </div>
+                                  <div class="form-floating">
+                                    <textarea class="form-control" placeholder="About Text" id="About" style="height: 100px"></textarea>
+                                    <label for="About">About Text</label>
+                                  </div>
+                            </form>
+                            <div class="update-social mt-4">
+                                <h5>Social Links</h5>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="facebook" placeholder="facebook">
+                                    <label for="facebook">Facebook Link</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="linkedin" placeholder="linkedin">
+                                    <label for="linkedin">Linkedin Link</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="Twitter" placeholder="Twitter">
+                                    <label for="Twitter">Twitter Link</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="Instagram" placeholder="Instagram">
+                                    <label for="Instagram">Instagram Link</label>
+                                </div>
+                            </div>
+                            <div class="update-social mt-4">
+                                <h5>Change Password</h5>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="NewPassword" placeholder="NewPassword">
+                                    <label for="NewPassword">New Password</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="ConfirmPassword" placeholder="ConfirmPassword">
+                                    <label for="ConfirmPassword">Confirm Password</label>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="float-end main-btn">
+                          Update Profile
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-data">
+                <div class="agent-info">
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <div class="agent-img">
+                        <img
+                          src="assets/images/agent.jpeg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div
+                        class="agent-side-info d-flex justify-content-between align-items-end mt-4"
+                      >
+                        <div>
+                          <h5 class="fw-bold">Arling Tracy</h5>
+                          <p class="mt-4"><b>Office:</b> +92-345-6789101</p>
+                          <p><b>Mobile:</b> +92-345-6789101</p>
+                          <p><b>Fax:</b> +92-345-6789101</p>
+                          <p class="m-0"><b>Email:</b> info@agent.com</p>
+                        </div>
+                        <div class="agent-social d-md-grid gap-3">
+                          <a href=""
+                            ><i class="fab fa-facebook-f list-inline-item"></i
+                          ></a>
+                          <a href=""
+                            ><i class="fab fa-twitter list-inline-item"></i
+                          ></a>
+                          <a href=""
+                            ><i class="fab fa-instagram list-inline-item"></i
+                          ></a>
+                          <a href=""
+                            ><i class="fab fa-linkedin-in list-inline-item"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about-agent p-4">
+                    <h4 class="fw-bold">About Me</h4>
+                    <p class="m-0 text-black-50">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority to have suffered alteration in
+                      some form, by injected humor. Ipsum available, but the a
+                      majority have suffered alteration in some form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================footer====================== -->
+    <section class="footer-style pt-5 pb-0 margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="footer-widget mb-4 mb-lg-5">
+              <a class="footer-logo" href="index.html"
+                ><img class="mb-4" src="assets/images/white-logo.png" alt=""
+              /></a>
+              <div class="row mb-4 mb-lg-5">
+                <div class="col-auto">
+                  <div class="contact-info">
+                    <p class="info-title">Total Free Customer Care</p>
+                    <h6 class="info-phone">
+                      <a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a>
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="contact-info">
+                    <p class="info-title">Nee Live Support?</p>
+                    <h6 class="info-mail">
+                      <a href="mailto:hi@Realestate.com">hi@Realestate.com</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="app-widget">
+                <h5 class="title text-white mb-4 fw-bold">Apps</h5>
+                <div class="row mb-4 mb-lg-5">
+                  <div class="col-auto">
+                    <a href="">
+                      <div class="app-info d-flex align-items-center mb-3">
+                        <div class="flex-shrink-0">
+                          <i class="fab fa-apple fs-2 text-white"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <p class="app-text text-white-50 fw-bold">
+                            Download on the
+                          </p>
+                          <h6 class="app-title text-white fw-bold">
+                            Apple Store
+                          </h6>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="">
+                      <div class="app-info d-flex align-items-center mb10">
+                        <div class="flex-shrink-0">
+                          <i class="fab fa-google-play fs-4 text-white"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <p class="app-text text-white-50 fw-bold">
+                            Get in on
+                          </p>
+                          <h6 class="app-title text-white fw-bold">
+                            Google Play
+                          </h6>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="social-widget">
+                <h6 class="text-white mb-4 fw-bold">
+                  Follow us on social media
+                </h6>
+                <div class="social-style1">
+                  <a href=""
+                    ><i class="fab fa-facebook-f list-inline-item"></i
+                  ></a>
+                  <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
+                  <a href=""
+                    ><i class="fab fa-instagram list-inline-item"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fab fa-linkedin-in list-inline-item"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="footer-widget mb-4 mb-lg-5">
+              <div class="mailchimp-widget mb-4 mb-lg-5">
+                <h6 class="title text-white fw-bold mb-4">
+                  Keep Yourself Up to Date
+                </h6>
+                <div class="mailchimp-style1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                  />
+                  <button type="submit">Subscribe</button>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <div class="link-style mb-3">
+                    <h6 class="text-white mb-4 fw-bold">Popular Search</h6>
+                    <ul class="ps-0">
+                      <li><a href="">Apartment for Rent</a></li>
+                      <li><a href="">House for Rent</a></li>
+                      <li><a href="">Offices for Buy</a></li>
+                      <li><a href="">Offices for Rent</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="link-style mb-3">
+                    <h6 class="text-white mb-4">Quick Links</h6>
+                    <ul class="ps-0">
+                      <li><a href="">Terms of Use</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                      <li><a href="">Contact Support</a></li>
+                      <li><a href="">Careers</a></li>
+                      <li><a href="">FAQs</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="link-style mb-3">
+                    <h6 class="text-white mb-4">Discover</h6>
+                    <ul class="ps-0">
+                      <li><a href="">Rawalpindi</a></li>
+                      <li><a href="">Islamabad</a></li>
+                      <li><a href="">Lahore</a></li>
+                      <li><a href="">Karachi</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container border-top border-light py-4">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="text-center text-lg-start">
+              <p class="copyright-text text-white">
+                © Realestate - All rights reserved
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="text-center text-lg-end">
+              <p class="footer-menu text-white">
+                <a class="text-white" href="#">Privacy</a> ·
+                <a class="text-white" href="#">Terms</a> ·
+                <a class="text-white" href="#">Sitemap</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================footer====================== -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+    <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            $("#imagePreview").css(
+              "background-image",
+              "url(" + e.target.result + ")"
+            );
+            $("#imagePreview").hide();
+            $("#imagePreview").fadeIn(650);
+          };
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      $("#imageUpload").change(function () {
+        readURL(this);
+      });
+    </script>
+  </body>
+</html>

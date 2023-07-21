@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
@@ -1316,10 +1317,15 @@ header .navbar .nav-item .nav-link {
   color: white;
 }
 
+.dashbaord-wrapper {
+  position: relative;
+}
 .dashbaord-wrapper .dash-nav {
   border-radius: 10px;
   border: 1px solid #7166F0;
   background-color: rgba(113, 102, 240, 0.1019607843);
+  position: sticky;
+  top: 90px;
 }
 .dashbaord-wrapper .dash-nav .navbar-nav .nav-item {
   border-bottom: 1px solid rgba(128, 128, 128, 0.148);
@@ -1400,6 +1406,82 @@ header .navbar .nav-item .nav-link {
 .dashbaord-wrapper .dashboard-content .dashbaord-data .dasboard-box h4 {
   font-weight: 700;
 }
+.dashbaord-wrapper .dashboard-content .profile-img .avatar-upload {
+  position: relative;
+  max-width: 205px;
+}
+.dashbaord-wrapper .dashboard-content .profile-img .avatar-upload .avatar-edit {
+  position: absolute;
+  right: 15px;
+  z-index: 1;
+  bottom: 15px;
+}
+.dashbaord-wrapper .dashboard-content .profile-img .avatar-upload .avatar-edit input {
+  display: none;
+}
+.dashbaord-wrapper .dashboard-content .profile-img .avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #7166F0;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.dashbaord-wrapper .dashboard-content .profile-img .avatar-upload .avatar-edit input + label:hover {
+  background: #080023;
+  border-color: #d6d6d6;
+}
+.dashbaord-wrapper .dashboard-content .profile-img .avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: "FontAwesome";
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.dashbaord-wrapper .dashboard-content .profile-img .avatar-upload .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.dashbaord-wrapper .dashboard-content .profile-img .avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dashbaord-wrapper .dashboard-content .profile-form input:focus {
+  box-shadow: none;
+  border-color: #7166F0;
+}
+.dashbaord-wrapper .dashboard-content .profile-form label {
+  color: gray;
+  font-weight: 400;
+  transition: 0.4s all;
+}
+.dashbaord-wrapper .dashboard-content .profile-form .update-social {
+  border-radius: 10px;
+  border: 1px solid #7166F0;
+  background-color: rgba(113, 102, 240, 0.1019607843);
+  padding: 20px;
+}
+.dashbaord-wrapper .dashboard-content .profile-form .update-social h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 .dashbaord-wrapper .myproperty-data .property-box {
   background-color: rgba(113, 102, 240, 0.1019607843);
   padding: 15px;
@@ -1433,4 +1515,134 @@ header .navbar .nav-item .nav-link {
 .dashbaord-wrapper .myproperty-data .property-box .property-option a:hover {
   background-color: #7166F0;
   color: #080023;
+}
+.dashbaord-wrapper .addproperty-data {
+  border-radius: 10px;
+  border: 1px solid #7166F0;
+  background-color: rgba(113, 102, 240, 0.1019607843);
+  padding: 20px;
+}
+.dashbaord-wrapper .addproperty-data h5 {
+  font-weight: 600;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  color: #080023;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__box {
+  padding: 0px;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__btn {
+  display: inline-block;
+  font-weight: 600;
+  color: #080023;
+  text-align: center;
+  min-width: 100%;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: #ffffff;
+  border-color: #7166F0;
+  border-radius: 10px;
+  line-height: 26px;
+  font-size: 15px;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__btn:hover {
+  background-color: unset;
+  color: #4045ba;
+  transition: all 0.3s ease;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__btn-box {
+  margin-bottom: 10px;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__img-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__img-box {
+  width: 200px;
+  padding: 0 10px;
+  margin-bottom: 12px;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__img-close {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  line-height: 24px;
+  z-index: 1;
+  cursor: pointer;
+}
+.dashbaord-wrapper .addproperty-data .property-img .upload__img-close:after {
+  content: "✖";
+  font-size: 14px;
+  color: white;
+}
+.dashbaord-wrapper .addproperty-data .property-img .img-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 100%;
+}
+.dashbaord-wrapper .addproperty-data .property-location {
+  border: 1px solid #7166F0;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.dashbaord-wrapper .addproperty-data .aminities .form-check {
+  background-color: #ffffff;
+  padding: 10px 12px 10px 36px;
+  border-radius: 10px;
+  border: 1px solid #7166F0;
+}
+.dashbaord-wrapper .addproperty-data label {
+  transition: 0.4s all;
+}
+.dashbaord-wrapper .addproperty-data .form-control:focus {
+  border: 1px solid #7166F0;
+  box-shadow: none;
+}
+.dashbaord-wrapper .addproperty-data select:focus {
+  border: 1px solid #7166F0;
+  box-shadow: none;
+}
+.dashbaord-wrapper .profile-data .agent-img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.dashbaord-wrapper .profile-data .about-agent {
+  border-radius: 10px;
+  border: 1px solid rgba(113, 102, 240, 0.12);
+  background-color: #fdfdfd;
+  width: 90%;
+  margin: -70px auto 0 auto;
+  position: relative;
+  box-shadow: 0px 3px 5px rgba(207, 207, 207, 0.16);
+}
+.dashbaord-wrapper .profile-data .agent-social a {
+  padding: 3px 6px;
+  background-color: #7166F0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 5px;
+}
+.dashbaord-wrapper .profile-data .agent-social a:hover {
+  background-color: #080023;
 }/*# sourceMappingURL=style.css.map */
