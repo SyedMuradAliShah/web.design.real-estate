@@ -41,6 +41,16 @@
         width: 40%;
     }
     }
+    .dashbaord-wrapper{
+        .profile-data .about-agent{
+            margin-top: 30px;
+            width: 100%;
+        }
+        .myproperty-data .property-box .property-info .property-img{
+            width: 100%;
+        }
+    }
+    
 }
 @media (min-width: 576px) and (max-width: 991px){
     .hero-section{
@@ -75,6 +85,10 @@
         width: 42%;
     }
     }
+    .dashbaord-wrapper .profile-data .about-agent{
+        margin-top: 30px;
+        width: 100%;
+    }
 
 }
 @media (min-width: 992px) and (max-width: 1440px){
@@ -99,5 +113,12 @@
     .left-side-search .widget-wrapper input.amount, .property-list .left-side-search .widget-wrapper input.amount2{
         width: 40%;
     }
+    }
+    .dashbaord-wrapper{
+        .profile-data .about-agent{
+            margin-top: 0px;
+            width: 100%;
+        }
+        
     }
 }
