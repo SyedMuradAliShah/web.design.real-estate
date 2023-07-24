@@ -33,6 +33,9 @@
   .login .login-form {
     margin: 0;
   }
+  .property-details .about-agent .top-properties .prprty-img {
+    width: 100%;
+  }
 }
 @media (min-width: 576px) and (max-width: 991px) {
   .hero-section .searchbar {
@@ -57,6 +60,9 @@
   }
   .property-list .left-side-search .widget-wrapper input.amount, .property-list .property-list .left-side-search .widget-wrapper input.amount2 {
     width: 42%;
+  }
+  .property-details .about-agent .top-properties .prprty-img {
+    width: 100%;
   }
 }
 @media (min-width: 992px) and (max-width: 1440px) {
