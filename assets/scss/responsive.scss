@@ -47,6 +47,10 @@
     .property-details .about-agent .top-properties .prprty-img{
         width: 100%;
     }
+    .agent-info .about-agent{
+        margin-top: 30px !important;
+        width: 100% !important;
+    }
 }
 @media (min-width: 576px) and (max-width: 991px){
     .hero-section{
@@ -84,7 +88,10 @@
     .property-details .about-agent .top-properties .prprty-img{
         width: 100%;
     }
-
+    .agent-info .about-agent{
+        margin-top: 30px !important;
+        width: 100% !important;
+    }
 }
 @media (min-width: 992px) and (max-width: 1440px){
     .hero-section .searchbar{
@@ -108,5 +115,9 @@
     .left-side-search .widget-wrapper input.amount, .property-list .left-side-search .widget-wrapper input.amount2{
         width: 40%;
     }
+    }
+    .agent-info .about-agent{
+        margin-top: -30px !important;
+        width: 90% !important;
     }
 }
