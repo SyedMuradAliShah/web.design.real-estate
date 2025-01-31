@@ -358,29 +358,29 @@ header .navbar .nav-item .nav-link {
   margin: 0;
 }
 
-.hm-agents a {
+.hm-Advisors a {
   color: black;
 }
-.hm-agents a:hover {
+.hm-Advisors a:hover {
   color: #7166F0;
 }
-.hm-agents .hm-agents-box:hover .hm-agent-img img {
+.hm-Advisors .hm-Advisors-box:hover .hm-agent-img img {
   transform: scale(1.2);
 }
-.hm-agents .hm-agents-box:hover .hm-agent-img .hm-agent-media {
+.hm-Advisors .hm-Advisors-box:hover .hm-agent-img .hm-agent-media {
   left: 2%;
   opacity: 1;
 }
-.hm-agents .hm-agents-box .hm-agent-img {
+.hm-Advisors .hm-Advisors-box .hm-agent-img {
   height: 200px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
-.hm-agents .hm-agents-box .hm-agent-img img {
+.hm-Advisors .hm-Advisors-box .hm-agent-img img {
   transition: 0.4s all;
 }
-.hm-agents .hm-agents-box .hm-agent-img .hm-agent-media {
+.hm-Advisors .hm-Advisors-box .hm-agent-img .hm-agent-media {
   position: absolute;
   top: 50%;
   left: -15%;
@@ -388,7 +388,7 @@ header .navbar .nav-item .nav-link {
   opacity: 0;
   transition: 0.4s all;
 }
-.hm-agents .hm-agents-box .hm-agent-img .hm-agent-media a {
+.hm-Advisors .hm-Advisors-box .hm-agent-img .hm-agent-media a {
   background-color: #7166F0;
   padding: 5px 7px 3px 7px;
   display: block;
@@ -399,10 +399,10 @@ header .navbar .nav-item .nav-link {
   color: #ffffff;
   font-size: 0.8rem;
 }
-.hm-agents .hm-agents-box .hm-agent-img .hm-agent-media a:hover {
+.hm-Advisors .hm-Advisors-box .hm-agent-img .hm-agent-media a:hover {
   background-color: #080023;
 }
-.hm-agents .hm-agents-box .lower-text p {
+.hm-Advisors .hm-Advisors-box .lower-text p {
   font-size: 0.8rem;
 }
 
@@ -988,40 +988,40 @@ header .navbar .nav-item .nav-link {
   top: 90px;
 }
 
-.agents-listing .agent-box {
+.Advisors-listing .agent-box {
   border-radius: 15px;
   overflow: hidden;
   border: 1px solid rgba(128, 128, 128, 0.219);
 }
-.agents-listing .agent-box:hover .agent-img {
+.Advisors-listing .agent-box:hover .agent-img {
   height: 100%;
 }
-.agents-listing .agent-box:hover .agent-img img {
+.Advisors-listing .agent-box:hover .agent-img img {
   transform: scale(1.2);
 }
-.agents-listing .agent-box .agent-img {
+.Advisors-listing .agent-box .agent-img {
   height: 100%;
   overflow: hidden;
 }
-.agents-listing .agent-box .agent-img img {
+.Advisors-listing .agent-box .agent-img img {
   transition: 0.4s all;
 }
-.agents-listing .agent-box .lower-text {
+.Advisors-listing .agent-box .lower-text {
   padding: 0px 10px;
 }
-.agents-listing .agent-box .lower-text a {
+.Advisors-listing .agent-box .lower-text a {
   color: gray;
 }
-.agents-listing .agent-box .lower-text a:hover {
+.Advisors-listing .agent-box .lower-text a:hover {
   color: #7166F0;
 }
-.agents-listing .agent-box .lower-text p {
+.Advisors-listing .agent-box .lower-text p {
   font-size: 0.9rem;
   font-weight: 500;
   color: gray;
   margin-bottom: 7px;
 }
-.agents-listing .agent-box .lower-text .agent-social a {
+.Advisors-listing .agent-box .lower-text .agent-social a {
   padding: 3px 6px;
   background-color: #7166F0;
   color: #ffffff;
@@ -1029,18 +1029,18 @@ header .navbar .nav-item .nav-link {
   font-size: 0.7rem;
   border-radius: 5px;
 }
-.agents-listing .agent-box .lower-text .agent-social a:hover {
+.Advisors-listing .agent-box .lower-text .agent-social a:hover {
   background-color: #080023;
 }
-.agents-listing .agent-box .lower-text .bottom {
+.Advisors-listing .agent-box .lower-text .bottom {
   border-top: 1px solid rgba(128, 128, 128, 0.219);
   font-size: 0.8rem;
   font-weight: 500;
 }
-.agents-listing .agent-box .lower-text .bottom img {
+.Advisors-listing .agent-box .lower-text .bottom img {
   width: 30px;
 }
-.agents-listing .agent-box .lower-text .bottom a {
+.Advisors-listing .agent-box .lower-text .bottom a {
   font-size: 0.8rem;
   margin-top: 12px;
   color: #7166F0;

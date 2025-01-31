@@ -375,8 +375,8 @@ header{
     }
 }
 // ======================================proprty-type
-// ======================================agents
-.hm-agents{
+// ======================================Advisors
+.hm-Advisors{
     a{
         color: black;
         &:hover{
@@ -384,7 +384,7 @@ header{
         }
     }
     
-    .hm-agents-box{
+    .hm-Advisors-box{
         &:hover{
             .hm-agent-img{
                 img{
@@ -434,7 +434,7 @@ header{
         }
     }
 }
-// ======================================agents
+// ======================================Advisors
 // ======================================explore
 .hm-explore{
     position: relative;
@@ -1112,8 +1112,8 @@ header{
     }
      
 }
-// =======================================agents-listing
-.agents-listing{
+// =======================================Advisors-listing
+.Advisors-listing{
     .agent-box{
         border-radius: 15px;
         overflow: hidden;

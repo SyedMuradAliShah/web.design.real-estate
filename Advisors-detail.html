@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate-Advisors</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/scss/responsive.css">
+    <link rel="stylesheet" href="assets/scss/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid px-3">
+              <a class="navbar-brand m-0 p-0" href="index.html">
+                <img src="assets/images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-4">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="listing.html">Sale</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="listing.html">Rent</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="Advisors.html">Advisors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <div class="d-block d-lg-flex right-side">
+                    <a href="login.html" class="main-btn d-block d-lg-inline mb-3 mb-lg-0"><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a>
+                    <a href="dashboard/add-property.html" class="main-btn d-block d-lg-inline"><i class="fa-solid fa-house-chimney me-2"></i> Add Listing</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- ======================title-banner====================== -->
+    <section class="title-banner">
+       <div class="container">
+            <div class="row">
+                <h1 class="text-center text-white fw-bold">Advisor Details</h1>
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center m-0">
+                      <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                      <li class="breadcrumb-item active text-white-50" aria-current="page">Advisor Details</li>
+                    </ol>
+                  </nav>
+            </div>
+       </div>
+    </section>
+    <!-- ======================title-banner====================== -->
+    <!-- ======================agent-detail====================== -->
+    <section class="agent-detail margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12">
+                  <div class="agent-info">
+                    <div class="row row-cols-1 row-cols-lg-2 w-100 m-0">
+                      <div class="col">
+                        <div class="agent-img">
+                          <img
+                            src="assets/images/agent.jpeg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div
+                          class="agent-side-info d-md-flex justify-content-between align-items-end mt-4"
+                        >
+                          <div>
+                            <h5 class="fw-bold">Arling Tracy</h5>
+                            <p class="mt-4"><b>Office:</b> +92-345-6789101</p>
+                            <p><b>Mobile:</b> +92-345-6789101</p>
+                            <p><b>Fax:</b> +92-345-6789101</p>
+                            <p class="m-0"><b>Email:</b> info@agent.com</p>
+                          </div>
+                          <div class="agent-social d-md-grid gap-3">
+                            <a href=""
+                              ><i class="fab fa-facebook-f list-inline-item"></i
+                            ></a>
+                            <a href=""
+                              ><i class="fab fa-twitter list-inline-item"></i
+                            ></a>
+                            <a href=""
+                              ><i class="fab fa-instagram list-inline-item"></i
+                            ></a>
+                            <a href=""
+                              ><i class="fab fa-linkedin-in list-inline-item"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="about-agent p-4">
+                      <h4 class="fw-bold">About Me</h4>
+                      <p class="m-0 text-black-50">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority to have suffered alteration in
+                        some form, by injected humor. Ipsum available, but the a
+                        majority have suffered alteration in some form.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 mt-5 mt-lg-0">
+                    <div class="about-agent p-3 p-xl-5">
+                        <h4 class="mb-4 fw-bold">Contact Agent</h4>
+                        <form action="">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Name" required="">
+                            <label for="name">Name</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required="">
+                            <label for="email">Email</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="number" placeholder="Phone" required="">
+                            <label for="number">Phone</label>
+                          </div>
+                          <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required=""></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                          </div>
+                          <div class="form-floating">
+                            <button class="main-btn m-0 mt-3"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================agent-detail====================== -->
+    <section class="heading margin mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="d-flex justify-content-between align-items-end">
+              <div>
+                <h2 class="fw-bold">All Properties</h2>
+                <p class="fs-6 m-0">Aliquam lacinia diam quis lacus euismod</p>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    <section class="property-listing">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4">
+            <div class="col">
+              <div class="listing">
+                <div class="property-img">
+                  <p class="tag">Rent</p>
+                  <a href="" class="fvrt">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                  <img src="assets/images/p-1.jpg" class="w-100" alt="property-img">
+                </div>
+                <div class="lower-text mt-3">
+                  <a href="property-detail.html" class="text-dark">
+                    <p class="fw-bold">$14,000</p>
+                    <h6 class="fw-bold text-truncate">Equestrian Family Home</h6>
+                    <p class="text-black-50 address text-truncate">Sharjah Garden City</p>
+                    <div class="d-flex justify-content-between text-black-50 fs-6 fw-light detail">
+                      <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                      <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                      <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="listing">
+                <div class="property-img">
+                  <p class="tag">Sale</p>
+                  <a href="" class="fvrt">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                  <img src="assets/images/p-2.jpg" class="w-100" alt="property-img">
+                
+                </div>
+                <div class="lower-text mt-3">
+                  <a href="property-detail.html" class="text-dark">
+                    <p class="fw-bold">$14,000</p>
+                    <h6 class="fw-bold text-truncate">Equestrian Family Home</h6>
+                    <p class="address text-black-50 text-truncate">Sharjah Garden City</p>
+                    <div class="d-flex justify-content-between text-black-50 fs-6 fw-light detail">
+                      <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                      <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                      <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="listing">
+                <div class="property-img">
+                  <p class="tag">Rent</p>
+                  <a href="" class="fvrt">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                  <img src="assets/images/p-3.jpg" class="w-100" alt="property-img">
+                
+                </div>
+                <div class="lower-text mt-3">
+                  <a href="property-detail.html" class="text-dark">
+                    <p class="fw-bold">$14,000</p>
+                    <h6 class="fw-bold text-truncate">Equestrian Family Home</h6>
+                    <p class="address text-black-50 text-truncate">Sharjah Garden City</p>
+                    <div class="d-flex justify-content-between text-black-50 fs-6 fw-light detail">
+                      <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                      <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                      <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="listing">
+                <div class="property-img">
+                  <p class="tag">Rent</p>
+                  <a href="" class="fvrt">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                  <img src="assets/images/p-4.jpg" class="w-100" alt="property-img">
+                
+                </div>
+                <div class="lower-text mt-3">
+                  <a href="property-detail.html" class="text-dark">
+                    <p class="fw-bold">$14,000</p>
+                    <h6 class="fw-bold text-truncate">Equestrian Family Home</h6>
+                    <p class="address text-black-50 text-truncate">Sharjah Garden City</p>
+                    <div class="d-flex justify-content-between text-black-50 fs-6 fw-light detail">
+                      <p class="m-0"><i class="fa-solid fa-bed"></i> 2 beds</p>
+                      <p class="m-0"><i class="fa-solid fa-sink"></i> 4 baths</p>
+                      <p class="m-0"><i class="fa-solid fa-vector-square"></i> 1200 sqft</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===================pagination=================== -->
+      <div class="listing-pagination margin">
+        <nav data-pagination="">
+          <a href="#" disabled=""><i class="fa-solid fa-angles-left"></i></a>
+          <ul>
+            <li class="current"><a href="#1">1</a>
+            </li><li><a href="#2">2</a>
+            </li><li><a href="#3">3</a>
+            </li><li><a href="#4">4</a>
+            </li><li><a href="#5">5</a>
+            </li><li><a href="#10">…</a>
+            </li><li><a href="#41">41</a>
+          </li></ul>
+          <a href="#2"><i class="fa-solid fa-angles-right"></i></a>
+        </nav>
+      </div>
+      
+      <!-- ===================pagination=================== -->
+        <!-- ======================explore====================== -->
+<section class="hm-explore margin">
+    <div class="container">
+      <div class="row">
+        <div class="explore-box d-block d-md-flex justify-content-between align-items-center py-5 px-5">
+          <div>
+            <h2 class="text-white fw-bold">Looking for a dream home?</h2>
+            <p class="m-0 text-white fw-bold">We help you make the dream of new house a reality</p>
+          </div>
+          <div>
+            <a href="listing.html" class="secondary-btn float-end">Explore Properties <i class="fa-solid fa-arrow-up-long"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================explore====================== -->
+<!-- ======================footer====================== -->
+<section class="footer-style pt-5 pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="footer-widget mb-4 mb-lg-5">
+          <a class="footer-logo" href="index.html"><img class="mb-4" src="assets/images/white-logo.png" alt=""></a>
+          <div class="row mb-4 mb-lg-5">
+            <div class="col-auto">
+              <div class="contact-info">
+                <p class="info-title">Total Free Customer Care</p>
+                <h6 class="info-phone"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="contact-info">
+                <p class="info-title">Nee Live Support?</p>
+                <h6 class="info-mail"><a href="mailto:hi@Realestate.com">hi@Realestate.com</a></h6>
+              </div>
+            </div>
+          </div>
+          <div class="app-widget">
+            <h5 class="title text-white mb-4 fw-bold">Apps</h5>
+            <div class="row mb-4 mb-lg-5">
+              <div class="col-auto">
+                <a href="">
+                  <div class="app-info d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0">
+                      <i class="fab fa-apple fs-2 text-white"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <p class="app-text text-white-50 fw-bold">Download on the</p>
+                      <h6 class="app-title text-white fw-bold">Apple Store</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="">
+                  <div class="app-info d-flex align-items-center mb10">
+                    <div class="flex-shrink-0">
+                      <i class="fab fa-google-play fs-4 text-white"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <p class="app-text text-white-50 fw-bold">Get in on</p>
+                      <h6 class="app-title text-white fw-bold">Google Play</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="social-widget">
+            <h6 class="text-white mb-4 fw-bold">Follow us on social media</h6>
+            <div class="social-style1">
+              <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
+              <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
+              <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
+              <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="footer-widget mb-4 mb-lg-5">
+          <div class="mailchimp-widget mb-4 mb-lg-5">
+            <h6 class="title text-white fw-bold mb-4">Keep Yourself Up to Date</h6>
+            <div class="mailchimp-style1">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <div class="link-style mb-3">
+                <h6 class="text-white mb-4 fw-bold">Popular Search</h6>
+                <ul class="ps-0">
+                  <li><a href="listing.html">Apartment for Rent</a></li>
+                  <li><a href="listing.html">House for Rent</a></li>
+                  <li><a href="listing.html">Offices for Buy</a></li>
+                  <li><a href="listing.html">Offices for Rent</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="link-style mb-3">
+                <h6 class="text-white mb-4">Quick Links</h6>
+                <ul class="ps-0">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="listing.html">Property for Sale</a></li>
+                  <li><a href="listing.html">Property for Rent</a></li>
+                  <li><a href="Advisors.html">Advisors</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="link-style mb-3">
+                <h6 class="text-white mb-4">Discover</h6>
+                <ul class="ps-0">
+                  <li><a href="listing.html">Rawalpindi</a></li>
+                  <li><a href="listing.html">Islamabad</a></li>
+                  <li><a href="listing.html">Lahore</a></li>
+                  <li><a href="listing.html">Karachi</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container border-top border-light py-4">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="text-center text-lg-start">
+          <p class="copyright-text text-white">© Realestate - All rights reserved</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="text-center text-lg-end">
+          <p class="footer-menu text-white"><a class="text-white" href="#">Privacy</a> · <a class="text-white" href="#">Terms</a> · <a class="text-white" href="#">Sitemap</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================footer====================== -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/javascript/jquery.js"></script>
+  <script src="assets/javascript/javascript.js"></script>
+      
+</body>
+</html>

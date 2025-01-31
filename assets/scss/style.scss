@@ -117,7 +117,13 @@ header{
         .nav-item{
             .nav-link{
                 color: $secondary-color;
-                font-weight: bold;
+                font-weight: 500;
+    font-size: 15px;
+    transition: 0.4s all;
+    &:hover{
+        color: $primary-color !important;
+        font-weight: 600;
+    }
             }
         }
     }
@@ -326,8 +332,8 @@ header{
             }
             .detail{
                 p{
-                    font-size: 14px;
-                    font-weight: 700;
+                    font-size: 13px;
+                    font-weight: 600;
                 }
             }
         }
@@ -375,8 +381,8 @@ header{
     }
 }
 // ======================================proprty-type
-// ======================================agents
-.hm-agents{
+// ======================================Advisors
+.hm-Advisors{
     a{
         color: black;
         &:hover{
@@ -384,7 +390,7 @@ header{
         }
     }
     
-    .hm-agents-box{
+    .hm-Advisors-box{
         &:hover{
             .hm-agent-img{
                 img{
@@ -403,6 +409,7 @@ header{
             position: relative;
             img{
                 transition: 0.4s all;
+                object-fit: cover;
             }
            .hm-agent-media{
                 position: absolute;
@@ -434,7 +441,7 @@ header{
         }
     }
 }
-// ======================================agents
+// ======================================Advisors
 // ======================================explore
 .hm-explore{
     position: relative;
@@ -800,8 +807,8 @@ header{
                     overflow: hidden; 
                     width: 80%; 
                     white-space: nowrap;
-                    font-weight: bold;
-                    font-size: 0.9rem;
+                    font-weight: 600;
+    font-size: 0.8rem;
                     i{
                         color: $primary-color;
                     }
@@ -1112,8 +1119,8 @@ header{
     }
      
 }
-// =======================================agents-listing
-.agents-listing{
+// =======================================Advisors-listing
+.Advisors-listing{
     .agent-box{
         border-radius: 15px;
         overflow: hidden;
@@ -1183,9 +1190,7 @@ header{
         .agent-img{
             border-radius: 15px;
             overflow: hidden;
-            img{
-
-            }
+            
         }
         .agent-side-info{
             margin-top: 20px;
